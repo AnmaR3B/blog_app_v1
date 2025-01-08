@@ -1,4 +1,6 @@
 lesson: 9, 10, 11,12,13,14,15,16,
 lesson: 17 : Using Canonical URLs For Models
 * from model use the function abolute
-lesson-18: Creating SEO Friendly URLs For Posts
+lesson-18: Creating SEO Friendly URLs For Posts.
+
+for testing 
