@@ -13,4 +13,4 @@ class PostAdmin(admin.ModelAdmin):
     raw_id_fields = ['author']
     #filtering using date
     date_hierarchy = 'publish'
-    ordering = ['status', 'publish','title']
+    ordering = ['status', 'publish',]

@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 class Post(models.Model):
 
@@ -28,6 +29,13 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+    def get_absolute_url(self):
+        #we got "blog:post_detail" from path('<int:id>/', views.post_detail, name='post_detail'),
+        return reverse("blog:post_detail", args=[self.id])
+    
+
+    ########################end***** post class***** ##########################
     
 class Anmar(models.Model):
     name = models.CharField(max_length=100)
